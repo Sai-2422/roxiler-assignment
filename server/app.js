@@ -11,10 +11,11 @@ import transactionRoutes from "./features/transaction/routes/transaction.routes.
 const app = express();
 app.use(
   cors({
-    origin: ``,
+    origin: '*', // Or specify your domain
     credentials: true,
   })
 );
+
 app.use(express.json());
 
 // Basic route
